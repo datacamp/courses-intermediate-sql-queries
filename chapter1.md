@@ -79,11 +79,9 @@ Ex().test_mc(2, [msg1, msg1, correct, msg1])
 ```
 
 --- type:NormalExercise lang:sql xp:100 skills:1 key:7d7e325a12
-## Onboarding | Errors
+## A note on errors
 
-If you submit the code to the right, you'll see that you get two types of errors.
-
-_SQL_ errors are shown below the editor. These are errors returns by the _SQL_ engine. You should see:
+If you submit the code to the right, you'll see that you get two types of errors. _SQL_ errors are shown below the editor. You should see:
 
 ```
 syntax error at or near "'DataCamp <3 SQL'" LINE 2: 'DataCamp <3 SQL' ^
