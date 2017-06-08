@@ -725,7 +725,7 @@ Ex().test_correct(check_result(), [
 *** =xp2: 20
 
 *** =instructions2
-Get the title and release year of French or Spanish films released in the 90s.
+Now, filter the records to only include French or Spanish language films.
 
 *** =solution2
 ```{sql}
@@ -784,7 +784,7 @@ Ex().test_correct(check_result(), [
 *** =xp3: 20
 
 *** =instructions3
-Get the title and release year of French or Spanish films released in the 90s that took in more than $2M at the box office.
+Finally, restrict the query to only return films that took in more than $2M at the box office.
 
 *** =solution3
 ```{sql}
@@ -920,6 +920,7 @@ set_options(visible_tables = ['films'])
 
 *** =instructions1
 Get the title and release year of all films released between 1990 and 2000.
+
 *** =solution1
 ```{sql}
 SELECT title, release_year
@@ -969,7 +970,8 @@ Ex().test_correct(check_result(), [
 *** =xp2: 20
 
 *** =instructions2
-Get the title and release year of all films released between 1990 and 2000 with budgets over $100 million.
+Now, select only films that have budgets over $100 million.
+
 *** =solution2
 ```{sql}
 SELECT title, release_year
@@ -1026,7 +1028,8 @@ Ex().test_correct(check_result(), [
 *** =xp3: 20
 
 *** =instructions3
-Get the title and release year of all Spanish films released between 1990 and 2000 with budgets over $100 million.
+Finally, restrict the query to only return Spanish films.
+
 *** =solution3
 ```{sql}
 SELECT title, release_year
