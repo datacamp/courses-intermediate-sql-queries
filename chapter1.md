@@ -78,6 +78,101 @@ correct = 'Correct!'
 Ex().test_mc(2, [msg1, msg1, correct, msg1])
 ```
 
+--- type:BulletExercise lang:sql xp:100 skills:1 key:f76443aff1
+## Onboarding (2)
+
+Another new feature we're introducing is *bullet exercises*, which allow you to easily practice a new concept through repetition. Check it out below!
+
+*** =pre_exercise_code
+```{python}
+connect('postgresql', 'films')
+```
+
+*** =sample_code
+```{sql}
+SELECT 'SQL'
+AS result;
+```
+
+*** =type1:NormalExercise
+*** =key1: 157ee8d1ad
+*** =xp1: 20
+
+*** =instructions1
+Submit the query in the editor! Don't worry, you'll learn how it works soon.
+
+*** =hint1
+Submit the query!
+
+*** =solution1
+```{sql}
+SELECT 'SQL'
+AS result;
+```
+
+*** =sct1
+```{sql}
+Ex().test_error()
+
+Ex().test_student_typed('SQL', msg="Don't modify the query!", fixed=True)
+
+Ex().test_has_columns()
+Ex().check_result()
+
+```
+
+*** =type2:NormalExercise
+*** =key2: 764f82129d
+*** =xp2: 20
+
+*** =instructions2
+Now change 'SQL' to 'SQL is' and click Submit!
+
+*** =hint2
+Change the code and submit the query!
+
+*** =solution2
+```{sql}
+SELECT 'SQL is'
+AS result;
+```
+
+*** =sct2
+```{sql}
+Ex().test_error()
+
+Ex().test_student_typed('SQL is', msg="Did you change the query correctly?", fixed=True)
+
+Ex().test_has_columns()
+Ex().check_result()
+```
+
+*** =type3:NormalExercise
+*** =key3: 1496605dac
+*** =xp3: 20
+
+*** =instructions3
+Finally, change 'SQL is' to 'SQL is cool!' and click Submit!
+
+*** =hint3
+Change the code and submit the query!
+
+*** =solution3
+```{sql}
+SELECT 'SQL is cool!'
+AS result;
+```
+
+*** =sct3
+```{sql}
+Ex().test_error()
+
+Ex().test_student_typed('SQL is cool!', msg="Did you change the query correctly?", fixed=True)
+
+Ex().test_has_columns()
+Ex().check_result()
+```
+
 --- type:NormalExercise lang:sql xp:100 skills:1 key:7d7e325a12
 ## A note on errors
 
