@@ -15,7 +15,7 @@ f05d06ad7807cf476fdb5f674174c9d5
 --- type:MultipleChoiceExercise lang:sql xp:50 skills:1 key:e456699517
 ## Onboarding | Tables
 
-If you've used DataCamp to learn [R](https://www.datacamp.com/courses/free-introduction-to-r) or [Python](https://www.datacamp.com/courses/intro-to-python-for-data-science), you'll be familiar with the interface. For SQL however, there are a few additional elements, you need to be aware of. 
+If you've used DataCamp to learn [R](https://www.datacamp.com/courses/free-introduction-to-r) or [Python](https://www.datacamp.com/courses/intro-to-python-for-data-science), you'll be familiar with the interface. For SQL however, there are a few new features you need to be aware of. 
 
 For this course, you'll be using a database containing information on almost 5000 films. To the right, underneath the editor, you can see the tables in this database by clicking through the tabs.
 
