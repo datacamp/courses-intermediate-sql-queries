@@ -127,7 +127,7 @@ Ex().test_has_columns()
 Ex().test_error()
 ```
 
---- type:BulletExercise lang:sql xp:100 skills:1
+--- type:BulletExercise lang:sql xp:100 skills:1 key:81eb00a53d
 ## Onboarding | Bullet Exercises
 
 Another new feature we're introducing is *bullet exercises*, which allow you to easily practice a new concept through repetition. Check it out below!
