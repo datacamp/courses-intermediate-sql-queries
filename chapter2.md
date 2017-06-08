@@ -648,6 +648,7 @@ Ex().test_mc(3, [success_msg, all, none])
 ```
 
 --- type:TabExercise lang:sql xp:100 key:ecc1838fc7
+## WHERE AND OR (2)
 
 You now know how to select rows that meet __some__ but not __all__ of the conditions by combining `AND` and `OR`. For example, the following query selects all PG/R rated films that were released in 1994 or 1995.
 
