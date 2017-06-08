@@ -12,6 +12,72 @@ description: >-
 *** =projector_key
 f05d06ad7807cf476fdb5f674174c9d5
 
+--- type:MultipleChoiceExercise lang:sql xp:50 skills:1 key:e456699517
+## Onboarding | Tables
+
+If you've used DataCamp to learn [R](https://www.datacamp.com/courses/free-introduction-to-r) or [Python](https://www.datacamp.com/courses/intro-to-python-for-data-science), you'll be familiar with the interface. For SQL however, there are a few additional elements, you need to be aware of. 
+
+For this course, you'll be using a database containing information on almost 5000 films. To the right, underneath the editor, you can see the tables in this database by clicking through the tabs.
+
+From looking at the tables, who is the first person listed in the `people` table?
+
+*** =pre_exercise_code
+```{python}
+connect('postgresql', 'films')
+```
+
+*** =instructions
+- Kanye West
+- Biggy Smalls
+- 50 Cent
+- Jay Z
+
+*** =hint
+Look at the `people` tab under the editor!
+
+*** =sct
+```{python}
+msg1 = 'Nope, look at the `people` table!'
+correct = 'Correct!'
+
+Ex().test_mc(3,[msg1, msg1, correct, msg1])
+```
+
+--- type:MultipleChoiceExercise lang:sql xp:50 skills:1 key:5314676aac
+## Onboarding | Query Results
+
+Notice the **query result** tab in the bottom right corner of your screen. This is where the results of your SQL queries will be displayed. 
+
+Run the query in the editor and check out the results in the **query result** tab! From looking at the tables, who is the second person listed in the `query results` table?
+
+*** =pre_exercise_code
+```{python}
+connect('postgresql', 'films')
+```
+
+*** =sample_code
+```{sql}
+SELECT name FROM people;
+```
+
+
+*** =instructions
+- Kanye West
+- A. Michael Baldwin
+- 50 Cent
+- Jay Z
+
+*** =hint
+Run the code in the editor and look at the `query result` tab under the editor!
+
+*** =sct
+```{python}
+msg1 = 'Nope, look at the `query result` table!'
+correct = 'Correct!'
+
+Ex().test_mc(2, [msg1, msg1, correct, msg1])
+```
+
 --- type:TabExercise lang:sql xp:100 skills:1 key:0cbd791cc8
 ## Onboarding
 
