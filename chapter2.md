@@ -644,7 +644,7 @@ all = 'Incorrect. `OR` does not select rows that meet ALL of the specified condi
 none = 'Incorrect. `OR` does not select rows that meet NONE of the specified conditions.'
 
 
-Ex().test_mc(4, [success_msg, all, none])
+Ex().test_mc(3, [success_msg, all, none])
 ```
 
 --- type:TabExercise lang:sql xp:100 key:ecc1838fc7
