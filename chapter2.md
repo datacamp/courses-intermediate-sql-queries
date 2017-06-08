@@ -593,7 +593,7 @@ Ex().test_correct(check_result(), [
 ])
 ```
 
---- type:TabExercise lang:sql xp:100 key:ecc1838fc7
+--- type:PlainMultipleChoiceExercise lang:sql xp:50
 ## WHERE AND OR
 
 What if you want to select rows based on multiple conditions where some but not _all_ of the conditions need to be met? For this, SQL has the `OR` clause.
@@ -625,6 +625,40 @@ AND (certification = 'PG' OR certification = 'R');
 ```
 
 Otherwise, due to SQL's precedence rules, you may not get the results you're expecting!
+
+<hr>
+What does the `OR` keyword do?
+
+*** =instructions
+- Select rows that meet ONE of the specified conditions.
+- Select rows that meet ALL of the specified conditions.
+- Select rows that meet NONE of the specified conditions.
+
+*** =hint
+Think about records that meet condition1 **and** condition2.
+
+*** =sct
+```{python}
+success_msg = 'Correct!'
+all = 'Incorrect. `OR` does not select rows that meet ALL of the specified conditions.'
+none = 'Incorrect. `OR` does not select rows that meet NONE of the specified conditions.'
+
+
+Ex().test_mc(4, [success_msg, all, none])
+```
+
+--- type:TabExercise lang:sql xp:100 key:ecc1838fc7
+
+You now know how to select rows that meet __some__ but not __all__ of the conditions by combining `AND` and `OR`. For example, the following query selects all PG/R rated films that were released in 1994 or 1995.
+
+```
+SELECT title
+FROM films
+WHERE (release_year = 1994 OR release_year = 1995)
+AND (certification = 'PG' OR certification = 'R');
+```
+
+Let us now write a query to get the title and release year of French or Spanish films released in the 90s that took in more than $2M at the box office. We are going to build the query one step at a time so that you get comfortable with each underlying concept in the process!
 
 *** =pre_exercise_code
 ```{python}
