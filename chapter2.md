@@ -659,9 +659,7 @@ WHERE (release_year = 1994 OR release_year = 1995)
 AND (certification = 'PG' OR certification = 'R');
 ```
 
-Let us now write a query to get the title and release year of French or Spanish films released in the 90s that took in more than $2M at the box office. 
-
-We are going to build the query one step at a time so that you get comfortable with each underlying concept in the process! In order to facilitate this, we are introducing yet another exercise type, that lets you build the solution to a larger problem step by step.
+Let us now write a query to get the title and release year of French or Spanish films released in the 90s that took in more than $2M at the box office. We are going to build the query one step at a time so that you get comfortable with each underlying concept in the process!
 
 *** =pre_exercise_code
 ```{python}
