@@ -1258,7 +1258,9 @@ Ex().test_mc(2, [msg2, msg1, msg2, msg2])
 --- type:TabExercise lang:sql xp:100 key:f7dcb9e122
 ## All together now
 
-Time to practice using `ORDER BY`, `GROUP BY` and `HAVING` together.
+Time to practice using `ORDER BY`, `GROUP BY` and `HAVING` together. 
+
+We are going to write a query that returns the average budget and average gross earnings for films released after 1990, for every release year with an average budget of greater than $60 million. 
 
 This is going to be a big query, but you can handle it!
 
