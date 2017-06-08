@@ -12,7 +12,7 @@ description: >-
 *** =projector_key
 f05d06ad7807cf476fdb5f674174c9d5
 
---- type:MultipleChoiceExercise lang:sql xp:50 skills:1 key:0cbd791cc8
+--- type:MultipleChoiceExercise lang:sql xp:50 skills:1
 ## Onboarding | Tables
 
 If you've used DataCamp to learn [R](https://www.datacamp.com/courses/free-introduction-to-r) or [Python](https://www.datacamp.com/courses/intro-to-python-for-data-science), you'll be familiar with the interface.
