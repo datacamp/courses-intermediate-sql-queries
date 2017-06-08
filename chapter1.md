@@ -191,6 +191,10 @@ That said, it's good practice to make SQL keywords uppercase to distinguish them
 
 It's also good practice (but not necessary for the exercises in this course) to include a semicolon at the end of your query. This tells SQL where the end of your query is!
 
+The interface you see below might look a little different from what you are used to. But don't worry, you will get a hang of it. We are introducing a new exercise type that lets you easily learn a new concept through repetition. 
+
+Are you ready to start practicing how to select a single column from a table? Remember, you can see the results of executing your query in the __query result__ tab to the right!
+
 *** =pre_exercise_code
 ```{python}
 connect('postgresql', 'films')
@@ -206,7 +210,8 @@ set_options(visible_tables = ['films', 'people'])
 *** =key1: a41cc766d5
 *** =xp1: 20
 *** =instructions1
-Select the `title` column from the `films` table. You can see your results in the query result tab to the right!
+Select the `title` column from the `films` table.
+
 *** =solution1
 ```{sql}
 SELECT title
@@ -239,7 +244,7 @@ Ex().test_correct(check_result(), [
 *** =key2: 4a74270ecd
 *** =xp2: 20
 *** =instructions2
-Modify your query to get the `release_year` column from the `films table`.
+Select the `release_year` column from the `films table`.
 
 *** =solution2
 ```{sql}
@@ -272,7 +277,7 @@ Ex().test_correct(check_result(), [
 *** =key3: 323bd5ddf5
 *** =xp3: 20
 *** =instructions3
-Now modify your query to get the `name` of each person in the `people` table.
+Select the `name` of each person in the `people` table.
 
 *** =solution3
 ```{sql}
