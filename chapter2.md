@@ -900,7 +900,7 @@ WHERE age BETWEEN 2 AND 12
 AND nationality = 'USA';
 ```
 
-Take a go at using `BETWEEN` with `AND` on the films data!
+Take a go at using `BETWEEN` with `AND` on the films data to get the title and release year of all Spanish films released between 1990 and 2000 with budgets over $100 million. We have broken the problem into smaller steps so that you can build the query as you go along! 
 
 *** =pre_exercise_code
 ```{python}
