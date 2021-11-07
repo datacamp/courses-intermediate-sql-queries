@@ -407,7 +407,7 @@ For example, to get the total budget of movies made in the year 2010 or later:
 ```
 SELECT SUM(budget)
 FROM films
-WHERE release_year >= 2010;
+WHERE release_year <= 2010;
 ```
 
 Now it's your turn!
@@ -433,7 +433,7 @@ Use the `SUM()` function to get the total amount grossed by all films made in th
 ```
 SELECT ___(___)
 FROM ___
-WHERE ___ >= ___;
+WHERE ___ <= ___;
 ```
 
 `@sample_code`
@@ -445,7 +445,7 @@ WHERE ___ >= ___;
 ```{sql}
 SELECT SUM(gross)
 FROM films
-WHERE release_year >= 2000;
+WHERE release_year <= 2000;
 ```
 
 `@sct`
