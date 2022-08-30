@@ -1,7 +1,7 @@
-# Intermediate SQL Queries
+# Intermediate SQL
 
 - Teach: https://www.datacamp.com/teach/repositories/641
-- Campus: https://www.datacamp.com/courses/intermediate-sql-queries
+- Campus: https://www.datacamp.com/courses/intermediate-sql
 - Docs: https://authoring.datacamp.com
 
 ## Description
