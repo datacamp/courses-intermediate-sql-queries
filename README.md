@@ -1,4 +1,4 @@
-# Introduction to SQL
+# Intermediate SQL Queries
 
 - Teach: https://www.datacamp.com/teach/repositories/641
 - Campus: https://www.datacamp.com/courses/intro-to-sql-for-data-science
