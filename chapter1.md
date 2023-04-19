@@ -47,9 +47,9 @@ skills:
 
 The DataCamp interface for SQL courses contains a few unique features you should be aware of.
 
-For this course, you'll be using a database containing information on almost 5000 films. To the right, underneath the editor, you can see the data in this database by clicking through the tabs.
+For this course, you'll be using a database containing information on almost 5000 films. At the top of the screen, above the exercise text, you can see the data in this database by tapping on the table names. 
 
-From looking at the tabs, who is the first person listed in the `people` table?
+From looking at the table, who is the first person listed in the `people` table?
 
 `@possible_answers`
 - Kanye West
@@ -58,7 +58,7 @@ From looking at the tabs, who is the first person listed in the `people` table?
 - Jay Z
 
 `@hint`
-Look at the `people` tab under the editor!
+Look at the `people` table at the top of the exercise!
 
 `@pre_exercise_code`
 ```{python}
@@ -88,14 +88,13 @@ skills:
   - 1
 ```
 
-Notice the **query result** tab in the bottom right corner of your screen. This is where the results of your SQL queries will be displayed.
+Notice the **Query** and the **Result** tabs at the top of your screen. The **Query** tab contains the query editor that you will use to write the code. The results of your SQL queries will be displayed in the **Result** tab.
 
-Run this query in the editor and check out the resulting table in the query result tab!
+Type this query in the editor in the **Query** tab, then tap **Run Code**, and check out the resulting table in the **Result** tab!
 
 ```{sql}
 SELECT name FROM people;
 ```
-
 
 Who is the second person listed in the query result?
 
@@ -106,7 +105,7 @@ Who is the second person listed in the query result?
 - Jay Z
 
 `@hint`
-Run the code in the editor and look at the query result tab under the editor!
+Run the code in the editor and look at the result tab at the top of the screen!
 
 `@pre_exercise_code`
 ```{python}
@@ -136,23 +135,23 @@ skills:
   - 1
 ```
 
-If you submit the code to the right, you'll see that you get two types of errors.
+If you submit the code that's written in the **Query** tab, you'll see that you get two types of errors.
 
 
-_SQL_ errors are shown below the editor. These are errors returned by the _SQL_ engine. You should see:
+_SQL_ errors are shown in the **Result** tab. These are errors returned by the _SQL engine_. You should see:
 
 ```
 syntax error at or near "'DataCamp <3 SQL'" LINE 2: 'DataCamp <3 SQL' ^
 ```
 <br>
-_DataCamp_ errors are shown in the **Instructions** box. These will let you know in plain English where you went wrong in your code! You should see:
+_DataCamp_ errors are shown in the **Incorrect submission** box. These will let you know in plain English where you went wrong in your code! You should see:
 
 ```
-You need to add SELECT at the start of line 2!
+Alright, now go ahead and fix your code by including a `SELECT`.
 ```
 
 `@instructions`
-Submit the code to the right, check out the errors, then fix them!
+Submit the code below, check out the errors, then fix them!
 
 `@hint`
 In the editor, change line 2 to `SELECT 'DataCamp <3 SQL'`.
@@ -178,7 +177,7 @@ AS result;
 
 `@sct`
 ```{sql}
-Ex().has_code(r'SELECT|select|Select', incorrect_msg="Alright, now go ahead and fix your code by including a `SELECT`.")
+Ex().has_code(r'SELECT|select|Select', incorrect_msg="Alright, now go ahead and fix your code by including a `SELECT` before `'DataCamp <3 SQL'`.")
 
 Ex().check_column('result').has_equal_value()
 
@@ -326,12 +325,14 @@ Each row, or *record*, of a table contains information about a single entity. Fo
 
 The table of employees might look something like this:
 
-| id | name | age | nationality |
-|----|----|----|----|
-| 1 | Jessica | 22 | Ireland
-| 2 | Gabriel | 48 | France |
-| 3 | Laura | 36 | USA |
+```out
+| id | name    | age | nationality |
+|----|---------|-----|-------------|
+| 1  | Jessica | 22  | Ireland     |
+| 2  | Gabriel | 48  | France      |
+| 3  | Laura   | 36  | USA         |
 
+```
 <hr>
 
 How many fields does the employees table above contain?

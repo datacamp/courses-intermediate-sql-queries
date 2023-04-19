@@ -766,11 +766,13 @@ GROUP BY sex;
 
 This might give, for example:
 
-| sex | count |
-|----|----|
-| male | 15 |
-| female | 19 |
+```out
+| sex    | count |
+|--------|-------|
+| male   | 15    |
+| female | 19    |
 
+```
 <br>
 Commonly, `GROUP BY` is used with _aggregate functions_ like `COUNT()` or `MAX()`. Note that `GROUP BY` always goes after the `FROM` clause!
 
@@ -818,10 +820,12 @@ ORDER BY count DESC;
 
 might return something like
 
-| sex | count |
-|----|----|
-| female | 19 |
-| male | 15 |
+```out
+| sex    | count |
+|--------|-------|
+| female | 19    |
+| male   | 15    |
+```
 
 <br>
 because there are more females at our company than males. Note also that `ORDER BY` always goes after `GROUP BY`. Let's try some exercises!
@@ -1856,6 +1860,12 @@ xp: 50
 ```
 
 `@question`
+Here is the result of your last query that joined the `films` and `reviews` tables:
+```out
+| title                 | imdb_score |
+|-----------------------|------------|
+| To Kill a Mockingbird | 8.4        |
+```
 What is the IMDB score for the film _To Kill a Mockingbird_?
 
 `@sample_code`
@@ -1870,7 +1880,7 @@ What is the IMDB score for the film _To Kill a Mockingbird_?
 - 9.3
 
 `@hint`
-Look at the query result tab!
+Look at the query result in the instructions!
 
 `@sct`
 ```{python}
